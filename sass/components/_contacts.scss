@@ -12,7 +12,7 @@
 }
 
 .contacts a {
-    color: var(--primary-text-color);
+    color: $primary-text-color;
 }
 
 .link-nav {
@@ -23,13 +23,13 @@
 
     &:hover .svg-nav,
     &:focus .svg-nav {
-        fill: var(--accent-color);
+        fill: $accent-color;
     }
 }
 
 .svg-nav {
     margin-right: 10px;
-    fill: var(--primary-text-color);
+    fill: $primary-text-color;
 
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -38,7 +38,7 @@
 .address {
     margin-bottom: 9px;
   
-    color: var(--white-color);
+    color: $white-color;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -46,7 +46,7 @@
   }
   
   .mail-phone a {
-    color: var(--secondary-text-color);
+    color: rgba(255, 255, 255, 0.6);
     font-size: 14px;
     line-height: 1, 71;
   }

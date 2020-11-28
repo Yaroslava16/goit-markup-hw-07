@@ -7,7 +7,7 @@
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
-    color: var(--title-text-color);
+    color: $title-text-color;
   }
 
   .employment-list {
@@ -20,8 +20,8 @@
     justify-content: center;
     width: 170px;
     height: 90px;
-    color: var(--comand-icon);
-    border: 1px solid var(--comand-icon);
+    color: $comand-icon;
+    border: 1px solid $comand-icon;
     border-radius: 4px;
     flex-basis: calc(100% / 6 - 30px);
     margin-right: 30px;
@@ -32,12 +32,12 @@
   
     &:hover,
     &:focus {
-      border-color: var(--accent-color);
+      border-color: $accent-color;
     }
   
     &:hover .icon-clients,
     &:focus .icon-clients {
-    fill: var(--accent-color);
+    fill: $accent-color;
     }
   }
 
@@ -46,7 +46,7 @@
   }
   
   .icon-clients {
-    fill: var(--comand-icon);
+    fill: $comand-icon;
   
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);

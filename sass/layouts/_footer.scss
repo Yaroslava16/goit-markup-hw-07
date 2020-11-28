@@ -1,5 +1,5 @@
 footer {
-    background-color: var(--secondary-bgc);
+    background-color: $secondary-bgc;
 }
 
 .footer-logo {
@@ -14,7 +14,7 @@ footer {
     font-size: 26px;
     line-height: 1.19;
     
-    color: var(--white-color);
+    color: $white-color;
 }
 
 .footer-conteiner {
@@ -51,7 +51,7 @@ font-weight: bold;
 font-size: 14px;
 line-height: 1.14;
 text-transform: uppercase;
-color: var(--white-color);
+color: $white-color;
 }
 
 .footer-link {
@@ -62,8 +62,8 @@ color: var(--white-color);
     width: 44px;
     height: 44px;
     
-    background-color: var(--footer-link);
-    fill: var(--white-color);
+    background-color: rgba(255, 255, 255, 0.1);
+    fill: $white-color;
     border-radius: 50%;
 
     transition-duration: 250ms;
@@ -72,7 +72,7 @@ color: var(--white-color);
 
     &:hover,
     &:focus {
-        background-color: var(--accent-color);
+        background-color: $accent-color;
     }
 }
 

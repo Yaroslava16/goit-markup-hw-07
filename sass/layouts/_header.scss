@@ -3,7 +3,7 @@
     margin-right: 93px;
     margin-bottom: 25px;
     
-    color: var(--title-text-color);
+    color: $title-text-color;
     text-decoration: none;
     font-family: Raleway;
     font-style: normal;
@@ -16,12 +16,12 @@
 
 
      &:hover {
-    color: var(--accent-color);
+    color: $accent-color;
     }
 }
 
 .logo-part {
-    color: var(--accent-color);
+    color: $accent-color;
 }
 
 .main-nav {
@@ -43,13 +43,13 @@
  }
 
  a.current:visited {
-    color: var(--accent-color);
+    color: $accent-color;
  }
 }
 
 .site-nav a,
 .auth-nav a {
-    color: var(--title-text-color);
+    color: $title-text-color;
     font-family: Roboto;
     font-weight: 500;
     font-size: 14px;
@@ -64,7 +64,7 @@
 .site-nav a:focus,
 .auth-nav a:hover, 
 .auth-nav a:focus {
-    color: var(--accent-color);
+    color: $accent-color;
 }
 
 
@@ -76,7 +76,7 @@ a.current::after {
     margin-top: 28px;
     height: 4px;
     border-radius: 2px;
-    color: var(--accent-color);
-    background-color: var(--accent-color);
+    color: $accent-color;
+    background-color: $accent-color;
 } 
 

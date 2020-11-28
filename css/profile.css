@@ -1,20 +1,3 @@
-:root {
-  --primary-text-color: #757575;
-  --title-text-color: #212121;
-  --accent-color: #2196F3;
-  --secondary-accent: #F5F4FA;
-  --white-color: #FFFFFF;
-  --secondary-bgc: #2F303A;
-  --color-gradient: rgba(47, 48, 58, 0.4);
-  --secondary-text-color: rgba(255, 255, 255, 0.6);
-  --line-color: rgba(236, 236, 236, 1);
-  --border-line: rgba(238, 238, 238, 1);
-  --comand-icon: rgba(175, 177, 184, 1);
-  --footer-link: rgba(255, 255, 255, 0.1);
-  --bgc-p-employtment: rgba(47, 48, 58, 0.8);
-  --backdrop-color: rgba(0, 0, 0, 0.2);
-}
-
 /* roboto-regular - latin_cyrillic */
 @font-face {
   font-family: 'Roboto';
@@ -62,8 +45,8 @@ html {
 }
 
 body {
-  background-color: var(--white-color);
-  color: var(--primary-text-color);
+  background-color: #FFFFFF;
+  color: #757575;
   font-family: 'Roboto', sans-serif;
   letter-spacing: 0.03em;
 }
@@ -103,7 +86,7 @@ p {
 }
 
 .line {
-  border-bottom: 1px solid var(--line-color);
+  border-bottom: 1px solid #ececec;
   width: auto;
 }
 
@@ -126,7 +109,7 @@ p {
   font-size: 20px;
   line-height: 1.15;
   text-align: center;
-  color: var(--title-text-color);
+  color: #212121;
 }
 
 .form-label {
@@ -134,7 +117,7 @@ p {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
-  color: var(--primary-text-color);
+  color: #757575;
 }
 
 .form-field {
@@ -188,13 +171,13 @@ p {
 }
 
 .form-input:focus ~ .form-svg {
-  fill: var(--accent-color);
+  fill: #2196F3;
 }
 
 .form-input:focus,
 .form-comment:focus {
   outline: none;
-  border-color: var(--accent-color);
+  border-color: #2196F3;
   cursor: pointer;
   color: black;
 }
@@ -210,11 +193,11 @@ p {
   padding-left: 30px;
   font-size: 14px;
   line-height: 1.71;
-  color: var(--primary-text-color);
+  color: #757575;
 }
 
 .contract {
-  color: var(--accent-color);
+  color: #2196F3;
   text-decoration: underline;
 }
 
@@ -226,8 +209,8 @@ p {
 }
 
 .checkbox:checked + .check-icon {
-  border-color: var(--accent-color);
-  background-color: var(--accent-color);
+  border-color: #2196F3;
+  background-color: #2196F3;
   background-image: url(../images/icon/check-active.svg);
   background-size: contain;
   background-origin: border-box;
@@ -240,7 +223,7 @@ p {
   transform: translateY(-130%);
   width: 15px;
   height: 15px;
-  border: 2px solid var(--title-text-color);
+  border: 2px solid #212121;
   border-radius: 2px;
   background-image: url(../images/icon/check-active.svg);
   transition-duration: 250ms;
@@ -260,7 +243,7 @@ p {
   font-size: 16px;
   line-height: 1.25;
   background-color: transparent;
-  color: var(--white-color);
+  color: #FFFFFF;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -268,8 +251,8 @@ p {
 }
 
 .subscription-field:-webkit-autofill, .subscription-field:-webkit-autofill:hover, .subscription-field:-webkit-autofill:focus {
-  -webkit-text-fill-color: var(--white-color);
-  -webkit-box-shadow: 0 0 0px 1000px var(--secondary-bgc) inset;
+  -webkit-text-fill-color: #FFFFFF;
+  -webkit-box-shadow: 0 0 0px 1000px #2F303A inset;
 }
 
 .subscription-field::placeholder {
@@ -283,8 +266,8 @@ p {
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 200px;
-  color: var(--white-color);
-  background-color: var(--accent-color);
+  color: #FFFFFF;
+  background-color: #2196F3;
   font-weight: bold;
   font-size: 16px;
   line-height: 1.87;
@@ -302,9 +285,9 @@ p {
   line-height: 1.87;
   text-align: center;
   letter-spacing: 0.06em;
-  background-color: var(--accent-color);
+  background-color: #2196F3;
   border: none;
-  color: var(--white-color);
+  color: #FFFFFF;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   transition-duration: 250ms;
@@ -325,8 +308,8 @@ p {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
-  background-color: var(--accent-color);
-  color: var(--white-color);
+  background-color: #2196F3;
+  color: #FFFFFF;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: none;
@@ -354,21 +337,21 @@ p {
   line-height: 1.62;
   text-align: center;
   border: none;
-  color: var(--title-text-color);
-  background-color: var(--secondary-accent);
+  color: #212121;
+  background-color: #F5F4FA;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-group button:hover {
-  color: var(--white-color);
-  background-color: var(--accent-color);
+  color: #FFFFFF;
+  background-color: #2196F3;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .btn-group button:focus {
-  color: var(--white-color);
-  background-color: var(--accent-color);
+  color: #FFFFFF;
+  background-color: #2196F3;
   outline: none;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
@@ -391,7 +374,7 @@ p {
 }
 
 .contacts a {
-  color: var(--primary-text-color);
+  color: #757575;
 }
 
 .link-nav {
@@ -402,19 +385,19 @@ p {
 
 .link-nav:hover .svg-nav,
 .link-nav:focus .svg-nav {
-  fill: var(--accent-color);
+  fill: #2196F3;
 }
 
 .svg-nav {
   margin-right: 10px;
-  fill: var(--primary-text-color);
+  fill: #757575;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address {
   margin-bottom: 9px;
-  color: var(--white-color);
+  color: #FFFFFF;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -422,7 +405,7 @@ p {
 }
 
 .mail-phone a {
-  color: var(--secondary-text-color);
+  color: rgba(255, 255, 255, 0.6);
   font-size: 14px;
   line-height: 1, 71;
 }
@@ -440,7 +423,7 @@ p {
   margin-top: 24px;
   margin-right: 93px;
   margin-bottom: 25px;
-  color: var(--title-text-color);
+  color: #212121;
   text-decoration: none;
   font-family: Raleway;
   font-style: normal;
@@ -452,11 +435,11 @@ p {
 }
 
 .logo:hover {
-  color: var(--accent-color);
+  color: #2196F3;
 }
 
 .logo-part {
-  color: var(--accent-color);
+  color: #2196F3;
 }
 
 .main-nav {
@@ -478,12 +461,12 @@ p {
 }
 
 .site-nav a.current:visited {
-  color: var(--accent-color);
+  color: #2196F3;
 }
 
 .site-nav a,
 .auth-nav a {
-  color: var(--title-text-color);
+  color: #212121;
   font-family: Roboto;
   font-weight: 500;
   font-size: 14px;
@@ -497,7 +480,7 @@ p {
 .site-nav a:focus,
 .auth-nav a:hover,
 .auth-nav a:focus {
-  color: var(--accent-color);
+  color: #2196F3;
 }
 
 a.current::after {
@@ -507,8 +490,8 @@ a.current::after {
   margin-top: 28px;
   height: 4px;
   border-radius: 2px;
-  color: var(--accent-color);
-  background-color: var(--accent-color);
+  color: #2196F3;
+  background-color: #2196F3;
 }
 
 .invisible {
@@ -529,7 +512,7 @@ a.current::after {
 
 .section-item {
   flex-basis: calc((100% - 60px) / 3);
-  border: 1px solid var(--border-line);
+  border: 1px solid #eeeeee;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -585,7 +568,7 @@ a.current::after {
   width: 100%;
   font-size: 18px;
   line-height: 1.56;
-  color: var(--white-color);
+  color: #FFFFFF;
   transform: translateY(100%);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -597,7 +580,7 @@ a.current::after {
 
 .title-capabilities {
   padding-bottom: 4px;
-  color: var(--title-text-color);
+  color: #212121;
   font-weight: bold;
   font-size: 18px;
   line-height: 2;
@@ -608,11 +591,11 @@ a.current::after {
   font-weight: normal;
   font-size: 16px;
   line-height: 1.87;
-  color: var(--primary-text-color);
+  color: #757575;
 }
 
 footer {
-  background-color: var(--secondary-bgc);
+  background-color: #2F303A;
 }
 
 .footer-logo {
@@ -626,7 +609,7 @@ footer {
   font-weight: bold;
   font-size: 26px;
   line-height: 1.19;
-  color: var(--white-color);
+  color: #FFFFFF;
 }
 
 .footer-conteiner {
@@ -661,7 +644,7 @@ footer {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
-  color: var(--white-color);
+  color: #FFFFFF;
 }
 
 .footer-link {
@@ -671,14 +654,14 @@ footer {
   padding: 12px;
   width: 44px;
   height: 44px;
-  background-color: var(--footer-link);
-  fill: var(--white-color);
+  background-color: rgba(255, 255, 255, 0.1);
+  fill: #FFFFFF;
   border-radius: 50%;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-link:hover, .footer-link:focus {
-  background-color: var(--accent-color);
+  background-color: #2196F3;
 }
 /*# sourceMappingURL=profile.css.map */

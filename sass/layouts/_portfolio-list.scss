@@ -16,7 +16,7 @@
 
   .section-item {
     flex-basis: calc((100% - 60px) / 3);
-    border: 1px solid var(--border-line);
+    border: 1px solid $border-line;
   
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -78,7 +78,7 @@
     font-size: 18px;
     line-height: 1.56;
   
-    color: var(--white-color);
+    color: $white-color;
     transform: translateY(100%);
   
     transition-duration: 250ms;
@@ -92,7 +92,7 @@
   .title-capabilities {
     padding-bottom: 4px;
   
-    color: var(--title-text-color);
+    color: $title-text-color;
     font-weight: bold;
     font-size: 18px;
     line-height: 2;
@@ -104,5 +104,5 @@
     font-size: 16px;
     line-height: 1.87;
   
-    color: var(--primary-text-color);
+    color: $primary-text-color;
   }
