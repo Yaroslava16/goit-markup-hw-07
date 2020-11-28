@@ -14,7 +14,6 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-
      &:hover {
     color: $accent-color;
     }
@@ -67,8 +66,6 @@
     color: $accent-color;
 }
 
-
-
 a.current::after {
     content: "";
     display: block;
@@ -80,3 +77,39 @@ a.current::after {
     background-color: $accent-color;
 } 
 
+.auth-nav {
+    display: flex;
+    margin-left: auto;
+
+    .item {
+        margin-right: 50px;
+    }
+
+    .item + .item {
+        margin-right: 50px;
+    }
+}
+
+.contacts a {
+    color: $primary-text-color;
+}
+
+.link-nav {
+    display: flex;
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover .svg-nav,
+    &:focus .svg-nav {
+        fill: $accent-color;
+    }
+}
+
+.svg-nav {
+    margin-right: 10px;
+    fill: $primary-text-color;
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}

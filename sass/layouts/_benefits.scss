@@ -33,22 +33,6 @@
     background-color: $secondary-accent;
     border-radius: 4px;
 }
-    
-.icon-group::before {
-    background-image: url(../images/icon/group.svg);
-}
-    
-.icon-clock::before {
-    background-image: url(../images/icon/clock.svg);
-}
-    
-.icon-diagram::before {
-    background-image: url(../images/icon/diagram.svg);
-}
-
-.icon-astronaut::before {
-    background-image: url(../images/icon/astronaut.svg);
-}
 
 .section-title {
     margin: 0;
@@ -66,4 +50,21 @@
       
     font-size: 14px;
     line-height: 1.71;
+} 
+   
+.icon-group::before {
+    background-image: url(../images/icon/group.svg);
 }
+    
+.icon-clock::before {
+    background-image: url(../images/icon/clock.svg);
+}
+    
+.icon-diagram::before {
+    background-image: url(../images/icon/diagram.svg);
+}
+
+.icon-astronaut::before {
+    background-image: url(../images/icon/astronaut.svg);
+}
+
