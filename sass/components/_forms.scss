@@ -4,6 +4,7 @@
     margin-right: auto;
     margin-left: auto;
 }
+
 .form-p {
     display: inline-block;
     min-width: 450px;
@@ -73,6 +74,17 @@
 
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:-webkit-autofill,
+    &:-webkit-autofill:hover, 
+    &:-webkit-autofill:focus {
+        -webkit-text-fill-color: rgba(0, 0, 0, 1);
+        -webkit-box-shadow: 0 0 0px 1000px rgba(255, 255, 255, 1) inset;
+    }
+
+    &:focus ~ .form-svg {
+        fill: var(--accent-color);
+    }
 }
 
 .form-input:focus,
@@ -83,44 +95,12 @@
     color: rgba(0, 0, 0, 1);
 }
 
-.form-input:-webkit-autofill,
-.form-input:-webkit-autofill:hover, 
-.form-input:-webkit-autofill:focus {
-    -webkit-text-fill-color: rgba(0, 0, 0, 1);
-    -webkit-box-shadow: 0 0 0px 1000px rgba(255, 255, 255, 1) inset;
-}
-
-.form-input:focus ~ .form-svg {
-    fill: var(--accent-color);
-}
-
-.form-btn {
-    display: block;
-    padding: 10px 55px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 40px;
-
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 1.87;
-    letter-spacing: 0.06em;
-    
-    background-color: var(--accent-color);
-    color: var(--white-color);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-border-radius: 4px;
-border: none;
-}
-
 .form-agreement {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 30px;
 }
-
-
 
 .agreement-label {
     padding-left: 30px;
@@ -140,6 +120,14 @@ border: none;
     -webkit-appearance: none;
     -moz-appearance: none;
     position: absolute;
+
+    &:checked + .check-icon {
+        border-color: var(--accent-color);
+        background-color: var(--accent-color);
+        background-image: url(../images/icon/check-active.svg);
+        background-size: contain;
+        background-origin: border-box;
+    }
 }
 
 .check-icon {
@@ -156,12 +144,37 @@ border: none;
 
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+} 
+
+.form-subscription {
+    display: flex;
+
 }
 
-.checkbox:checked + .check-icon {
-    border-color: var(--accent-color);
-    background-color: var(--accent-color);
-    background-image: url(../images/icon/check-active.svg);
-    background-size: contain;
-    background-origin: border-box;
-} 
+.subscription-field {
+    margin-right: 12px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    padding-left: 15px;
+    width: 358px;
+    font-size: 16px;
+    line-height: 1.25;
+    background-color: transparent;
+    color: var(--white-color);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+
+
+    &:-webkit-autofill,
+    &:-webkit-autofill:hover, 
+    &:-webkit-autofill:focus {
+        -webkit-text-fill-color: var(--white-color);
+        -webkit-box-shadow: 0 0 0px 1000px var(--secondary-bgc) inset;
+    }
+
+    &::placeholder {
+        color: rgba(255, 255, 255, 0.6);
+    }
+}

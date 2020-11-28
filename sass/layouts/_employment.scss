@@ -1,9 +1,7 @@
-.conteiner {
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: auto;
-}
+.benefits-list{
+    margin: 0;
+    padding: 0;
+  }
 
 .title-employment {
     margin: 0;
@@ -16,16 +14,6 @@
     text-align: center;
 
     color: var(--title-text-color);
-}
-
-.benefits-list{
-    margin: 0;
-    padding: 0;
-}
-
-.img-list {
-    margin-bottom: 94px;
-    display: flex;
 }
 
 .img-list {

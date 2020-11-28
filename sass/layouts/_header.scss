@@ -1,3 +1,29 @@
+.logo {
+    margin-top: 24px;
+    margin-right: 93px;
+    margin-bottom: 25px;
+    
+    color: var(--title-text-color);
+    text-decoration: none;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.19;
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+
+     &:hover {
+    color: var(--accent-color);
+    }
+}
+
+.logo-part {
+    color: var(--accent-color);
+}
+
 .main-nav {
     display: flex;
     align-items: center;
@@ -6,6 +32,19 @@
 .site-nav {
     display: flex;
     padding-top: 32px;
+
+
+ .item {
+    margin-right: 50px;
+ }
+
+ .item:last-child {
+    margin-right: 0;
+ }
+
+ a.current:visited {
+    color: var(--accent-color);
+ }
 }
 
 .site-nav a,
@@ -28,9 +67,7 @@
     color: var(--accent-color);
 }
 
-.site-nav a.current:visited {
-    color: var(--accent-color);
-}
+
 
 a.current::after {
     content: "";
@@ -42,15 +79,4 @@ a.current::after {
     color: var(--accent-color);
     background-color: var(--accent-color);
 } 
-
-.site-nav .item {
-    margin-right: 50px;
-}
-
-.site-nav .item:last-child {
-    margin-right: 0;
-}
-
-
-
 

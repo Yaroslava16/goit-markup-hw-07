@@ -1,14 +1,14 @@
 .auth-nav {
     display: flex;
     margin-left: auto;
-}
 
-.auth-nav .item {
-    margin-right: 50px;
-}
+    .item {
+        margin-right: 50px;
+    }
 
-.auth-nav .item + .item {
-    margin-right: 50px;
+    .item + .item {
+        margin-right: 50px;
+    }
 }
 
 .contacts a {
@@ -20,6 +20,11 @@
 
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover .svg-nav,
+    &:focus .svg-nav {
+        fill: var(--accent-color);
+    }
 }
 
 .svg-nav {
@@ -29,13 +34,6 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.link-nav:hover .svg-nav,
-.link-nav:focus .svg-nav {
-    fill: var(--accent-color);
-}
-
-
 
 .address {
     margin-bottom: 9px;

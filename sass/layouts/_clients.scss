@@ -1,10 +1,3 @@
-.conteiner {
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: auto;
-}
-
 .title-clients {
     padding-top: 86px;
     padding-bottom: 50px;
@@ -36,8 +29,18 @@
   
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
   
+    &:hover,
+    &:focus {
+      border-color: var(--accent-color);
+    }
+  
+    &:hover .icon-clients,
+    &:focus .icon-clients {
+    fill: var(--accent-color);
+    }
+  }
+
   .clients-svg:last-child {
     margin-right: 0;
   }
@@ -47,14 +50,4 @@
   
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  
-  .link-clients:hover,
-  .link-clients:focus {
-    border-color: var(--accent-color);
-  }
-  
-  .link-clients:hover .icon-clients,
-  .link-clients:focus .icon-clients {
-    fill: var(--accent-color);
   }

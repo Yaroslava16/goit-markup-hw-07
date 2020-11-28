@@ -2,12 +2,11 @@
 @import "./base/fonts";
 @import "./base/common";
 
-@import "./components/conteiner";
-@import "./components/logo";
-@import "./components/site-nav";
 @import "./components/contacts";
 @import "./components/modal";
 @import "./components/forms";
+@import "./components/buttons";
+@import "./layouts/header";
 @import "./layouts/hero";
 @import "./layouts/benefits";
 @import "./layouts/employment";
